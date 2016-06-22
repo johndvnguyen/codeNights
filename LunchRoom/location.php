@@ -1,25 +1,47 @@
 <?php
+	
+	
 class location{
 	private $neighbors;
 	private $distanceToKeg;
 	
-	//set an array of neighbors
-	private function setNeighbors($neighbors) {
+	function __construct(){
+		$this->neighbors = new array[];
+		$this->distanceToKeg = 0;
+	}
+	/*
+	Set the value of neighbors
+	Arguments: array $neighbors
+	Return: none
+	*/
+	function setNeighbors($neighbors) {
 		$this->neighbors=$neighbors;
 	}
-	
-	//return an array of neighbors
-	private function getNeighbors() {
+	/*
+	Get the value of neighbors
+	Arguments: none
+	Return: value of $neighbors
+	*/
+	 function getNeighbors() {
 		return $neighbors;
 	}
 	
-	//set the distance to Keg
-	private function setDistanceToKeg($distanceToKeg) {
+	/*
+	Set the value of distanceToKeg
+	Arguments: int $distanceToKeg
+	Return: none
+	*/ 
+	function setDistanceToKeg($distanceToKeg) {
 		$this->distanceToKeg=$distanceToKeg;
 	}
 	
-	//return the distance to Keg
-	private function getDistanceToKeg() {
+	/*
+	Get the value of $distanceToKeg
+	Arguments: none
+	Return: value of $distanceToKeg
+	*/
+	
+	 function getDistanceToKeg() {
 		return $distanceToKeg;
 	}
 
