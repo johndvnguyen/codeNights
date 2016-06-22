@@ -8,9 +8,15 @@ class table{
 	private $length;
 	private $width;
 	private $height;
-	
 	private $color;
 	
+	function __construct(){
+	$this->seats = new array[];
+	$this->length = 0;
+	$this->width = 0;
+	$this->height = 0;
+	$this->color = 'blue';
+}
 	//Getters and Setters
 	
 	/*
